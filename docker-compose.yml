@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  asir_bind:
+    image: internetsystemsconsortium/bind9:9.16
+    ports:
+      - 53:53
+    volumes:
+      - config:/etc/bind
+volumes:
+  config:    
